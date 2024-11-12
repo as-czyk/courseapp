@@ -3,7 +3,6 @@ import { Routes } from "@/constants/Routes";
 import { useRouter } from "expo-router";
 import React from "react";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
-import { FadeInDown } from "react-native-reanimated";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import backgroundImage from "@/assets/images/background.webp";
