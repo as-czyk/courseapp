@@ -33,14 +33,9 @@ export default function App() {
               title="Explore Content"
               onPress={() => router.push(Routes.HOME)}
             />
-            <ButtonUI
-              variant="outlined"
-              title="Create Account"
-              onPress={() => router.push(Routes.HOME)}
-            />
           </View>
-          <StatusBar style="light" />
         </SafeAreaView>
+        <StatusBar style="light" />
       </ImageBackground>
     </View>
   );

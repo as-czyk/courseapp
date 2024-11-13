@@ -19,12 +19,6 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <AppGradient colors={["#a6a6a6", "#ffffff"]}>
-        <View style={{ paddingHorizontal: 20, marginVertical: 16 }}>
-          <Text style={styles.heading}>Welcome Aron!</Text>
-          <Text style={styles.description}>
-            Explore all stories and details from peaks above 8000 meters.
-          </Text>
-        </View>
         <View>
           <FlatList
             data={MountainData}
