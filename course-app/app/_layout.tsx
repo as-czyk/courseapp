@@ -1,4 +1,4 @@
-import { Slot, Stack } from "expo-router";
+import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import "react-native-reanimated";
 
@@ -15,6 +15,8 @@ export default function RootLayout() {
         }}
       />
       <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/login" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/register" options={{ headerShown: false }} />
     </Stack>
   );
 }

@@ -29,9 +29,11 @@ export default function App() {
             </Text>
           </View>
           <View style={styles.buttonContainer}>
+            <ButtonUI title="Login" onPress={() => router.push(Routes.LOGIN)} />
             <ButtonUI
-              title="Explore Content"
-              onPress={() => router.push(Routes.HOME)}
+              title="Register"
+              variant="outlined"
+              onPress={() => router.push(Routes.REGISTER)}
             />
           </View>
         </SafeAreaView>
