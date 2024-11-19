@@ -1,3 +1,11 @@
+/* Dieses TabsLayout ist die Komponente für die untere Navigationsleiste der App. 
+Es wird das "expo-router" Tabs-Element verwendet, um die Struktur der Tabs zu definieren.
+Die Icons stammen aus dem Feather-Iconset und werden für jedes Tab individuell angezeigt.
+
+Jeder Tab hat einen spezifischen Namen (für die Navigation), ein Label (sichtbar in der Leiste)
+und ein Icon, das die Funktion des jeweiligen Tabs symbolisiert.
+Die Kopfzeile (Header) ist für alle Tabs deaktiviert, und die Farbe des aktiven Tabs ist schwarz. */
+
 import { Feather } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
