@@ -35,6 +35,10 @@ export default function App() {
               variant="outlined"
               onPress={() => router.push(Routes.REGISTER)}
             />
+            <ButtonUI
+              title="Continue as Guest"
+              onPress={() => router.push(Routes.HOME)}
+            />
           </View>
         </SafeAreaView>
         <StatusBar style="light" />

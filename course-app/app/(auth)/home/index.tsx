@@ -1,9 +1,10 @@
+import { CloudApi } from "@/cloud/CloudApi";
 import AppGradient from "@/components/AppGradient";
 import { Colors } from "@/constants/Colors";
 import { Mountain, MountainData } from "@/constants/MountainData";
 import { MountainImages } from "@/constants/MountainImages";
 import { LinearGradient } from "expo-linear-gradient";
-import { useRouter } from "expo-router";
+import { useEffect } from "react";
 import {
   FlatList,
   ImageBackground,
@@ -14,7 +15,14 @@ import {
 } from "react-native";
 
 export default function Home() {
-  const router = useRouter();
+  useEffect(() => {
+    const get = async () => {
+      const mountains = await CloudApi.getMountains();
+      console.log(mountains);
+    };
+
+    get();
+  }, []);
 
   return (
     <View style={styles.container}>
